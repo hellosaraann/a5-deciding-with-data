@@ -1,23 +1,31 @@
 //For readability and clarity it is good practice to declare variables at the beginning of the JS document if possible
 var churchillSpeech = {
-      'author': 'Churchill',
-      'year': 1940,
-      'yearIsBCE': false,
-      'authorAge': '66'
+      'author'    : 'Churchill',
+      'year'      : 1940,
+      'yearIsBCE' : false,
+      'authorAge' : '66'
     },
     ghandiSpeech = {
-      'author': 'Ghandi',
-      'year': 1942,
-      'yearIsBCE': false,
-      'authorAge': '73'
+      'author'    : 'Ghandi',
+      'year'      : 1942,
+      'yearIsBCE' : false,
+      'authorAge' : '73'
     },
     demosthenesSpeech = {
-      'author': 'Demosthenes',
-      'year': 342,
-      'yearIsBCE': true,
-      'authorAge': '42'
+      'author'    : 'Demosthenes',
+      'year'      : 342,
+      'yearIsBCE' : true,
+      'authorAge' : '42'
     },
     speechesArray = [churchillSpeech, ghandiSpeech, demosthenesSpeech];
+
+/*window.onload = function(userName) {
+  window.prompt("What is your name?");
+}*/
+
+var userName = window.prompt("What is your name?");
+
+
 
 document.getElementById('BtnDonate').addEventListener('click', function(){
   //Code in here executes when the user clicks the "Donate" button.
