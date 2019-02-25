@@ -19,10 +19,7 @@ var churchillSpeech = {
     },
     speechesArray = [churchillSpeech, ghandiSpeech, demosthenesSpeech];
 
-/*window.onload = function(userName) {
-  window.prompt("What is your name?");
-}*/
-
+//greetings & setting of user names
 var userName = window.prompt("What is your name?");
 
 if (typeof userName == "string" && userName !== "") {
@@ -30,6 +27,11 @@ if (typeof userName == "string" && userName !== "") {
 } else {
   console.log("Okay, I'll just call you User")
 };
+
+if (userName == "") {
+  var userName = "User";
+}
+
 
 document.getElementById('BtnDonate').addEventListener('click', function(){
   //Code in here executes when the user clicks the "Donate" button.
