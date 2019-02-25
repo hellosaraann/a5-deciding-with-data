@@ -25,7 +25,11 @@ var churchillSpeech = {
 
 var userName = window.prompt("What is your name?");
 
-
+if (typeof userName == "string" && userName !== "") {
+  console.log("Hi " + userName + "!")
+} else {
+  console.log("Okay, I'll just call you User")
+};
 
 document.getElementById('BtnDonate').addEventListener('click', function(){
   //Code in here executes when the user clicks the "Donate" button.
